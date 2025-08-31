@@ -1,22 +1,37 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #000000;
-  --color-primary: #FF0000;
-  --color-secondary: #00FF00;
-  --color-text: #0000FF;
-  --font-heading: Arial, sans-serif;
-  --font-text: Georgia, serif;
+  --color-background: #FFFFFF;
+  --color-primary: #4361EE;
+  --color-secondary: #3A0CA3;
+  --color-accent: #F72585;
+  --color-text: #000000;
+  --color-textLight: #FFFFFF;
+  --font-heading: "Fijalla One", sans-serif;
+  --font-text: Roboto, sans-serif;
 }
 
 @layer base {
-  p, a {
+  html {
+    scroll-behavior: smooth;
+  }
+  p {
     @apply font-text;
     color: var(--color-text);
   }
-  h1, h2, h3, h4, h5, h6 {
+  a, button {
+    @apply font-text transition-all ease-in-out hover:bg-accent/90 hover:text-textLight;
+  }
+  h1 {
     @apply font-heading;
     color: var(--color-text);
+    font-size: var(--text-4xl);
+    font-weight: 700;
+  }
+  h2, h3, h4, h5, h6 {
+    @apply font-heading;
+    color: var(--color-text);
+    font-size: var(--text-3xl);
   }
 }
 

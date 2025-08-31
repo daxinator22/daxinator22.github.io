@@ -4,69 +4,79 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./output.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<!--Header Section-->
-		<div class="flex w-full h-25 bg-background flex-row pl-10">
+		<div id="header" class="flex w-full h-25 bg-background flex-row pl-10">
 			<div class="flex w-1/4 h-full items-center"><p>P6K Solutions</p></div>
 			<div class="w-1/2"></div>
 			<div class="flex w-1/4 h-full items-center justify-end pr-10 space-x-5">
-				<a>About Us</a>
-				<a>Services</a>
-				<a>Contact Us</a>
+				<a class="p-2 rounded-md hover:shadow-md" href="#about">About Us</a>
+				<a class="p-2 rounded-md hover:shadow-md" href="#services">Services</a>
+				<a class="p-2 rounded-md hover:shadow-md" href="#contact">Contact Us</a>
 			</div>
 		</div>
 		
 		<!--Hero Section-->
-		<div class="w-full h-100 bg-gradient-to-r from-primary to-secondary flex flex-col items-center justify-center space-y-5">
-			<h1>P6K Solutions</h1>
-			<h2>MLOps/DevOps strategy, implementation and optimization</h1>	
-			<a class="bg-background py-2 px-4 rounded-lg">Interested?</a>
+		<div id="hero" class="w-full h-200 bg-gradient-to-r from-primary to-secondary flex flex-col items-center justify-center space-y-5">
+			<h1 class="text-6xl text-textLight">P6K Solutions</h1>
+			<h2 class="text-textLight">MLOps/DevOps strategy, implementation and optimization</h1>	
+			<a class="bg-accent mt-20 py-3 px-10 rounded-lg text-textLight text-xl shadow-md hover:bg-accent/90" href="#services">View Services</a>
 		</div>
 
 		<!--About Section-->
-		<div class="w-full h-100 bg-background flex flex-col p-10 justify-center">
+		<div id="about" class="w-full h-100 bg-background flex flex-col p-10 justify-center">
 			<h1 class="flex">About</h1>
 			<div class="w-full flex flex-row">
 				<div class="w-1/2 h-full flex flex-col justify-center">
 					<p>I'm a DevOps consultant with experience helping small to medium-sized businesses adopt modern cloud practices. From automating deployments to improving system reliability, I deliver solutions that let teams move faster with confidence.<br><br>Whether you need short-term contracting or ongoing support, I provide flexible engagement options that fit your business needs.</p>
 				</div>
 				<div class="w-1/2 h-full flex justify-center items-center">
-					<img src="https://cataas.com/cat/gif?width=400&height=250"/>
+					<img src="https://cataas.com/cat/gif?width=400&height=250" class="shadow-md"/>
 				</div>
 			</div>
 		</div>
 
 		<!--Services Section-->
-		<div class="w-full h-100 bg-gradient-to-r from-primary to-secondary flex flex-col justify-center items-center">
-			<h1 class="mb-10">Services</h1>
+		<div id="services" class="w-full h-100 bg-gradient-to-r from-primary to-secondary flex flex-col justify-center items-center">
+			<h1 class="mb-10 text-textLight">Services</h1>
 			<div class="w-full h-3/5 flex grid grid-cols-3">
 				<div class="w-full h-full flex justify-center">
-					<div class="w-100 h-full flex bg-background"></div>
+					<div class="w-100 h-full p-5 flex justify-center bg-background shadow-md rounded-xl hover:shadow-xl transition-all ease-in-out">
+						<h3>DevOps Audit & Roadmap</h3>
+					</div>
 				</div>
 				<div class="w-full h-full flex justify-center">
-					<div class="w-100 h-full bg-background"></div>
+					<div class="w-100 h-full p-5 flex justify-center bg-background shadow-md rounded-xl hover:shadow-xl transition-all ease-in-out">
+						<h3>CI/CD Pipeline Sprint</h3>
+					</div>
 				</div>
 				<div class="w-full h-full flex justify-center">
-					<div class="w-100 h-full bg-background"></div>
+					<div class="w-100 h-full p-5 flex justify-center bg-background shadow-md rounded-xl hover:shadow-xl transition-all ease-in-out">
+						<h3>Cloud Cost Optimization</h3>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<!--Contact Section-->
-		<div class="w-full h-150 bg-background flex flex-col justify-center items-center p-10 gap-5">
+		<div id="contact" class="w-full h-150 bg-background flex flex-col justify-center items-center p-10 gap-5 shadow-lg">
 			<h1>Contact Us</h1>
-			<form class="w-full h-full bg-secondary grid gap-6 p-5">
-				<input type="text" placeholder="Your Name" class="p-4 border rounded-lg" required>
-				<input type="email" placeholder="Your Email" class="p-4 border rounded-lg" required>
-				<textarea placeholder="Your Message" rows="5" class="p-4 border rounded-lg" required></textarea>
-				<button type="submit" class="bg-background text-text p-4 rounded-lg">Submit</button>
+			<form class="w-full h-full bg-background grid grid-cols-6 gap-6 p-5 border rounded-lg">
+				<input type="text" placeholder="Your Name" class="p-4 border rounded-lg col-span-6" required>
+				<input type="email" placeholder="Your Email" class="p-4 border rounded-lg col-span-6" required>
+				<textarea placeholder="Your Message" rows="5" class="p-4 border rounded-lg col-span-6" required></textarea>
+				<button type="submit" class="bg-accent text-text p-4 rounded-lg text-textLight min-w-20 shadow-md hover:bg-accent/90">Submit</button>
 			</form>
 		</div>
 	
 		<!--Footer Section-->
-		<div class="w-full h-25 bg-primary flex justify-center items-center">
-			<p>&copy; 2025 P6K Solutions, LLC. All rights reserved.</p>
+		<div id="footer" class="w-full h-25 bg-primary flex justify-center items-center">
+			<p class="text-textLight">&copy; 2025 P6K Solutions, LLC. All rights reserved.</p>
 		</div>
 	</body>
 </html>
