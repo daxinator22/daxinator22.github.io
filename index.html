@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Vineta - Multipurpose eCommerce</title>
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+        content="Themesflat Vineta - A modern and versatile eCommerce template designed for various online stores, including fashion, furniture, electronics, and more. SEO-friendly, fast-loading, and highly customizable.">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Scroll Top -->
+    <button id="goTop">
+        <span class="border-progress"></span>
+        <span class="icon icon-arrow-right"></span>
+    </button>
+
+    <!-- preload -->
+    <div class="preload preload-container">
+        <div class="preload-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- /preload -->
+
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header" class="header-default">
+            <div class="container">
+                <div class="row wrapper-header align-items-center">
+                    <div class="col-md-4 col-3 d-xl-none">
+                        <a href="#mobileMenu" class="mobile-menu" data-bs-toggle="offcanvas" aria-controls="mobileMenu">
+                            <i class="icon icon-categories1"></i>
+                        </a>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-6">
+                        <a href="index.html" class="logo-header">
+                            <img src="wolf_logo.png" alt="logo" class="logo">
+                        </a>
+                    </div>
+                    <div class="col-xl-8 d-none d-xl-block">
+                        <nav class="box-navigation text-center">
+                            <ul class="box-nav-menu">
+                                <li class="menu-item">
+                                    <a href="#" class="item-link">Home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="item-link">About Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="item-link">Services</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="item-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-3">
+                        <ul class="nav-icon d-flex justify-content-end align-items-center">
+                            <li class="nav-search">
+                                <a href="#search" data-bs-toggle="modal" class="nav-icon-item">
+                                    <i class="icon icon-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Header -->
+    </div>
+
+    <!-- Slider -->
+    <section class="tf-slideshow slider-space1 slider-viewport slider-default">
+      <div dir="ltr" class="swiper tf-sw-slideshow slider-effect-fade" data-preview="1" data-tablet="1" data-mobile="1"
+        data-centered="false" data-space="0" data-space-mb="0" data-loop="true" data-auto-play="true" data-speed="1000">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-wrap">
+              <div class="image">
+                <img src="images/slider/chair/chair1.jpg" data-src="images/slider/chair/chair1.jpg" alt="slider"
+                  class="lazyload">
+              </div>
+              <div class="box-content">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 col-12 col-sm-6">
+                      <div class="content-slider">
+                        <div class="box-title-slider">
+                          <h2 class="heading fw-medium fade-item fade-item-1">
+                           P6K Solutions 
+                          </h2>
+                          <p class="sub text-md fade-item fade-item-2 text-main">
+                            MLOps/DevOps strategy, implementation and optimization.
+                          </p>
+                        </div>
+                        <div class="box-btn-slider fade-item fade-item-3">
+                          <a href="shop-default.html" class="tf-btn bg-primary border-0 animate-btn">
+                            Our Services 
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="wrap-pagination">
+          <div class="container">
+            <div class="sw-dots border-white medium sw-pagination-slider justify-content-center"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Slider -->
+
+    <!-- Categories -->
+    <section class="flat-spacing-3">
+      <div class="container">
+        <div class="flat-title wow fadeInUp">
+          <h4 class="title">Meet the Team</h4>
+        </div>
+        <div dir="ltr" class="xl-px-26 swiper tf-swiper wow fadeInUp" data-swiper='{
+                        "slidesPerView": 2,
+                        "spaceBetween": 12,
+                        "speed": 800,
+                        "observer": true,
+                        "observeParents": true,
+                        "slidesPerGroup": 2,
+                        "navigation": {
+                            "clickable": true,
+                            "nextEl": ".nav-next-categories",
+                            "prevEl": ".nav-prev-categories"
+                        },
+                        "pagination": { "el": ".sw-pagination-categories", "clickable": true },
+                        "breakpoints": {
+                        "575": { "slidesPerView": 3, "spaceBetween": 12 ,"slidesPerGroup": 2 },    
+                        "768": { "slidesPerView": 4, "spaceBetween": 24, "slidesPerGroup": 3 },
+                        "1200": { "slidesPerView": 4, "spaceBetween": 64, "slidesPerGroup": 3}
+                        }
+                    }'>
+          <div class="swiper-wrapper">
+            <!-- item 1 -->
+            <div class="swiper-slide">
+              <div class="wg-cls style-circle hover-img">
+                <a href="shop-default.html" class="image img-style d-block">
+                  <img src="images/cls-categories/florist/cate-1.jpg"
+                    data-src="headshot.jpg" alt="categories" class="lazyload">
+                </a>
+                <div class="cls-content text-center">
+                  <p class="fw-bold text-md">Dax Thompson</p>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="wg-cls style-circle hover-img">
+                <a href="shop-default.html" class="image img-style d-block">
+                  <img src="images/cls-categories/florist/cate-2.jpg"
+                    data-src="images/cls-categories/florist/cate-2.jpg" alt="categories" class="lazyload">
+                </a>
+                <div class="cls-content text-center">
+                  <a href="shop-default.html" class="link text-md fw-medium ">Occasions</a>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="swiper-slide">
+              <div class="wg-cls style-circle hover-img">
+                <a href="shop-default.html" class="image img-style d-block">
+                  <img src="images/cls-categories/florist/cate-3.jpg"
+                    data-src="images/cls-categories/florist/cate-3.jpg" alt="categories" class="lazyload">
+                </a>
+                <div class="cls-content text-center">
+                  <a href="shop-default.html" class="link text-md fw-medium ">Plants & Greenery</a>
+                </div>
+              </div>
+            </div>
+            <!-- item 4 -->
+            <div class="swiper-slide">
+              <div class="wg-cls style-circle hover-img">
+                <a href="shop-default.html" class="image img-style d-block">
+                  <img src="images/cls-categories/florist/cate-4.jpg"
+                    data-src="images/cls-categories/florist/cate-4.jpg" alt="categories" class="lazyload">
+                </a>
+                <div class="cls-content text-center">
+                  <a href="shop-default.html" class="link text-md fw-medium ">Wedding & Events</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="d-flex d-xl-none sw-dot-default sw-pagination-categories justify-content-center"></span>
+        </div>
+      </div>
+    </section>
+    <!-- /Categories -->
+
+    <!-- /Contact -->
+    <section class="s-contact flat-spacing-13">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="content-left">
+                        <div class="title fw-medium display-md-2">Contact Us</div>
+                        <p class="sub-title text-main">Have a question? Please contact us using the customer support <br> channels below.</p>
+                        <ul class="contact-list">
+                            <li>
+                                <p>
+                                    Address:
+                                    <a class="link"
+                                        href="https://www.google.com/maps?q=15Yarranst,Punchbowl,NSW,Australia"
+                                        target="_blank">
+                                        15 Yarran st, Punchbowl, NSW, Australia
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Phone number:
+                                    <a class="link" href="tel:123456">
+                                        +1 234 567
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Email:
+                                    <a class="link" href="mailto:contact@vineta.com">
+                                        contact@vineta.com
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Open:
+                                    <span class="text-main">
+                                        8am - 7pm, Mon - Sat
+                                    </span>
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="tf-social-icon style-large ">
+                            <li>
+                                <a href="https://www.facebook.com/" class="social-item social-linkedin">
+                                    <i class="icon icon-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-right">
+                        <div class="title fw-medium display-md-2">
+                            Get In Touch
+                        </div>
+                        <p class="sub-title text-main">
+                            Please submit all general enquiries in the contact form below and we look forward to
+                            hearing from you soon.
+                        </p>
+                        <div class="form-contact-wrap">
+                            <form method="post" class="form-default" id="contactform" action="./contact/contact-process.php">
+                                <div class="wrap">
+                                    <div class="cols">
+                                        <fieldset>
+                                            <label for="name">Your name*</label>
+                                            <input name="name" id="name" class="radius-8" type="text" required>
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="email">Your email*</label>
+                                            <input name="email" id="email" class="radius-8" type="email" required>
+                                        </fieldset>
+                                    </div>
+                                    <div class="cols">
+                                        <fieldset class="textarea">
+                                            <label for="message">Message*</label>
+                                            <textarea name="message" id="message" required
+                                                class="radius-8"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="button-submit send-wrap">
+                                        <button class="tf-btn animate-btn" type="submit">
+                                            Send
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Contact -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer-default xl-pb-70">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-wrap">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="wolf_logo.png" class="" alt="logo">
+                        </a>
+                    </div>
+                    <p class="text-dark">Copyright © 2025 by <span class="fw-medium">P6K Solutions, LLC.</span> All Rights Reserved.</p>
+                    <ul class="tf-social-icon style-large">
+                        <li>
+                            <a href="https://www.facebook.com/" class="social-item social-linkedin">
+                                <i class="icon icon-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/lazysize.min.js"></script>
+    <script src="js/count-down.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/multiple-modal.js"></script>
+    <script src="js/jquery-validate.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
