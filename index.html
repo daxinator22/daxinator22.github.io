@@ -20,6 +20,16 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Adjust for fixed/sticky header offset when jumping to anchors */
+    section {
+      scroll-margin-top: 100px;
+    }
+  </style>
 
   <!-- Favicon and Touch Icons  -->
   <link rel="shortcut icon" href="images/logo/favicon.png">
@@ -28,10 +38,6 @@
 </head>
 
 <body class="font-4 primary-4">
-
-  <!-- RTL -->
-  <a href="javascript:void(0);" id="toggle-rtl" class="tf-btn animate-btn"><span>RTL</span></a>
-  <!-- /RTL  -->
 
   <!-- Scroll Top -->
   <button id="goTop">
@@ -67,16 +73,16 @@
               <nav class="box-navigation text-center">
                 <ul class="box-nav-menu">
                   <li class="menu-item">
-                    <a href="#" class="item-link">Home</a>
+                    <a href="#home" class="item-link">Home</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="item-link">About Us</a>
+                    <a href="#about" class="item-link">About Us</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#" class="item-link">Services</a>
+                    <a href="#services" class="item-link">Services</a>
                   </li>
                   <li class="menu-item position-relative">
-                    <a href="#" class="item-link">Contact Us</a>
+                    <a href="#contact" class="item-link">Contact Us</a>
                   </li>
                 </ul>
               </nav>
@@ -84,23 +90,24 @@
             <div class="col-xl-4 col-md-4 col-3">
               <ul class="tf-social-icon style-large">
                 <li>
-                  <a href="https://www.snapchat.com/" class="social-item social-linkedin"><i class="icon icon-linkedin"></i></a>
+                  <a href="https://www.snapchat.com/" class="social-item social-linkedin"><i
+                      class="icon icon-linkedin"></i></a>
                 </li>
               </ul>
+            </div>
           </div>
         </div>
-      </div>
     </header>
     <!-- /Header -->
     <!-- Slider -->
-    <section class="tf-slideshow slider-space1 slider-viewport slider-default">
+    <section id="home" class="tf-slideshow slider-space1 slider-viewport slider-default">
       <div dir="ltr" class="swiper tf-sw-slideshow slider-effect-fade" data-preview="1" data-tablet="1" data-mobile="1"
         data-centered="false" data-space="0" data-space-mb="0" data-loop="true" data-auto-play="true" data-speed="1000">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slider-wrap">
               <div class="image">
-                <img src="./background.jpg" alt="slider" class="lazyload">
+                <img src="./background.png" alt="slider" class="lazyload">
               </div>
               <div class="box-content">
                 <div class="container">
@@ -108,11 +115,11 @@
                     <div class="col-lg-12 col-12 col-sm-6">
                       <div class="content-slider">
                         <div class="box-title-slider">
-                          <h2 class="heading fw-medium fade-item fade-item-1">
-                           DevOps as a Service 
+                          <h2 class="heading fw-medium fade-item fade-item-1 text-white">
+                            DevOps as a Service
                           </h2>
-                          <p class="sub text-md fade-item fade-item-2 text-main">
-                           MLOps/DevOps strategy, implementation and optimization 
+                          <p class="sub text-md fade-item fade-item-2 text-white">
+                            MLOps/DevOps strategy, implementation and optimization
                           </p>
                         </div>
                         <div class="box-btn-slider fade-item fade-item-3">
@@ -128,46 +135,56 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
     </section>
     <!-- /Slider -->
 
     <!-- Why Choose -->
-    <section class="flat-spacing-3">
-        <div class="container">
-            <div class="flat-title text-center">
-                <p class="display-md-2 fw-medium">
-                  About P6K Solutions 
-                </p>
-                <p class="text-md text-main">
-                    Our products are crafted with innovation and an eye for the latest trends. We push the
-                    boundaries of <br class="d-none d-lg-block">
-                    traditional fashion, delivering bold, fresh designs that inspire confidence and
-                    individuality.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-xl-7 col-md-6">
-                    <ul class="list-esd d-md-flex flex-md-column justify-content-md-center h-100">
-                        <li class="item">
-                            <h6>
-                              Improving Software Development  
-                            </h6>
-                            <p>At P6K Solutions, we believe that great software starts with great processes. Our philosophy is simple: when your development lifecycle runs smoothly, your customers receive better products, faster. That’s why everything we do is centered on creating seamless, reliable, and automated workflows that empower your team to focus on innovation instead of firefighting.<br><br>
-						We specialize in building and optimizing CI/CD pipelines, automating cloud infrastructure, and implementing monitoring solutions that give you confidence in every release. By eliminating manual bottlenecks and reducing human error, we help you deliver consistent, high-quality experiences to your customers.<br><br>
-						Whether you’re a startup building your first SaaS product or an established business serving millions of users worldwide, we tailor our solutions to fit your unique challenges. Our goal is not just to provide technical expertise, but to act as a partner helping you scale efficiently, minimize downtime, and stay ahead in a competitive market.<br><br>
-						At the end of the day, we measure our success by yours. When your applications run smoothly, your customers stay happy, and your business grows stronger. That’s the standard we set at P6K Solutions.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl-5 col-md-6">
-                    <div class="image radius-16 overflow-hidden w-100 h-100">
-                        <img src="./about.jpg" alt=""
-                            class="lazyload w-100 h-100 object-fit-cover">
-                    </div>
-                </div>
-            </div>
+    <section id="about" class="flat-spacing-3">
+      <div class="container">
+        <div class="flat-title text-center">
+          <p class="display-md-2 fw-medium">
+            About P6K Solutions
+          </p>
+          <p class="text-md text-main">
+            Our products are crafted with innovation and an eye for the latest trends. We push the
+            boundaries of <br class="d-none d-lg-block">
+            traditional fashion, delivering bold, fresh designs that inspire confidence and
+            individuality.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-xl-7 col-md-6">
+            <ul class="list-esd d-md-flex flex-md-column justify-content-md-center h-100">
+              <li class="item">
+                <h6>
+                  Improving Software Development
+                </h6>
+                <p>At P6K Solutions, we believe that great software starts with great processes. Our philosophy is
+                  simple: when your development lifecycle runs smoothly, your customers receive better products, faster.
+                  That’s why everything we do is centered on creating seamless, reliable, and automated workflows that
+                  empower your team to focus on innovation instead of firefighting.<br><br>
+                  We specialize in building and optimizing CI/CD pipelines, automating cloud infrastructure, and
+                  implementing monitoring solutions that give you confidence in every release. By eliminating manual
+                  bottlenecks and reducing human error, we help you deliver consistent, high-quality experiences to your
+                  customers.<br><br>
+                  Whether you’re a startup building your first SaaS product or an established business serving millions
+                  of users worldwide, we tailor our solutions to fit your unique challenges. Our goal is not just to
+                  provide technical expertise, but to act as a partner helping you scale efficiently, minimize downtime,
+                  and stay ahead in a competitive market.<br><br>
+                  At the end of the day, we measure our success by yours. When your applications run smoothly, your
+                  customers stay happy, and your business grows stronger. That’s the standard we set at P6K Solutions.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-5 col-md-6">
+            <div class="image radius-16 overflow-hidden w-100 h-100">
+              <img src="./about.jpg" alt="" class="lazyload w-100 h-100 object-fit-cover">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /Why Choose -->
 
@@ -252,28 +269,23 @@
     <!-- /Meet the Team -->
 
     <!-- Our Services -->
-    <section class=" flat-spacing-3 pt-0">
-        <div class="container">
-            <div class="flat-title-2 d-xl-flex justify-content-xl-between">
-                <div class="box-title">
-                    <p class="display-md-2 fw-medium">
-                       Our Services
-                    </p>
-                    <p class="text-xl">
-                        Curated Fashion to Match Your Vibe
-                    </p>
-                </div>
-                <div class="box-text">
-                    <p class="text-md">
-                        Our skilled stylists have thoughtfully assembled seasonal outfits that are both <br
-                            class="d-none d-xl-block"> trendy and
-                        timeless. With a variety of looks, they’re here to inspire your next <br
-                            class="d-none d-xl-block"> fashion-forward
-                        ensemble.
-                    </p>
-                </div>
-            </div>
-            <div dir="ltr" class="swiper tf-swiper" data-swiper='{
+    <!-- DevOps -->
+    <section id="services" class=" flat-spacing-3 pt-0">
+      <div class="container">
+
+
+        <div class="flat-title-2 d-xl-flex justify-content-xl-between mb-3 mb-lg-4">
+          <div class="box-title">
+            <p class="display-md-2 fw-medium">
+              DevOps
+            </p>
+            <p class="text-xl mb-2 mb-lg-1">
+              Improve Software Development Lifecycle
+            </p>
+          </div>
+
+        </div>
+        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
                 "slidesPerView": 1,
                 "spaceBetween": 12,
                 "speed": 800,
@@ -285,138 +297,317 @@
                     "992": { "slidesPerView": 3, "spaceBetween": 24}
                 }
             }'>
-                <div class="swiper-wrapper">
-                    <!-- item 1 -->
-                    <div class="swiper-slide">
-                        <div class="tf-icon-box style-border">
-                            <div class="box-icon">
-                                <i class="icon icon-search"></i>
-                            </div>
-                            <div class="content">
-                                <h6>Audit & Roadmap</h6>
-                                <p class="text-sm text-main text-line-clamp-4">Review your current software development lifecycle and come up with a plan to improve it.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 2 -->
-                    <div class="swiper-slide">
-                        <div class="tf-icon-box style-border">
-                            <div class="box-icon">
-                                <i class="icon icon-quality"></i>
-                            </div>
-                            <div class="content">
-                                <h6>CI/CD Pipeline Sprint</h6>
-                                <p class="text-sm text-main text-line-clamp-4">Create a CI/CD pipeline that will take your code from source to deployment.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 2 -->
-                    <div class="swiper-slide">
-                        <div class="tf-icon-box style-border">
-                            <div class="box-icon">
-                                <i class="icon icon-payment"></i>
-                            </div>
-                            <div class="content">
-                                <h6>Cloud Cost Optimization</h6>
-                                <p class="text-sm text-main text-line-clamp-4">Review your current cloud spend and optimize your resource usage, saving you money.</p>
-                            </div>
-                        </div>
-                    </div>
+          <div class="swiper-wrapper">
+            <!-- item 1 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-search"></i>
                 </div>
-
-                <div class="d-xl-flex justify-content-center" style="padding: 20px 0;">
-                  <a href="shop-default.html" class="tf-btn bg-light-orange-6 border-0 animate-btn">
-                    Schedule a meeting
-                    <img class="icon" width="24" src="images/icon/arrow.svg" alt="">
-                  </a>
+                <div class="content">
+                  <h6>CI/CD Implementation</h6>
+                  <p class="text-sm text-main text-line-clamp-4">GitHub/GitLab CI, Jenkins, ArgoCD</p>
                 </div>
+              </div>
             </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-quality"></i>
+                </div>
+                <div class="content">
+                  <h6>Monitoring and Logging</h6>
+                  <p class="text-sm text-main text-line-clamp-4">Prometheus/Grafana, ELK/EFK stacks</p>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-payment"></i>
+                </div>
+                <div class="content">
+                  <h6>Strategy and Roadmap</h6>
+                  <p class="text-sm text-main text-line-clamp-4">Review current DevOps strategy and roadmap improvement
+                    plan</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
+
+        <!-- MLOps -->
+        <div class="flat-title-2 d-xl-flex justify-content-xl-between mb-3 mb-lg-4">
+          <div class="box-title">
+            <p class="display-md-2 fw-medium">
+              MLOps
+            </p>
+            <p class="text-xl mb-2 mb-lg-1">
+              Better Machine Learning Operations
+            </p>
+          </div>
+
+        </div>
+        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 12,
+                "speed": 800,
+                "preventInteractionOnTransition": false, 
+                "touchStartPreventDefault": false,
+                "pagination": { "el": ".sw-pagination-iconbox", "clickable": true },
+                "breakpoints": {
+                    "575": { "slidesPerView":2, "spaceBetween": 12}, 
+                    "992": { "slidesPerView": 3, "spaceBetween": 24}
+                }
+            }'>
+          <div class="swiper-wrapper">
+            <!-- item 1 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-search"></i>
+                </div>
+                <div class="content">
+                  <h6>Model Lifecycle Automation</h6>
+                  <p class="text-sm text-main text-line-clamp-4">CI/CD pipelines for ML models, automated data
+                    validation, model retraining triggers</p>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-quality"></i>
+                </div>
+                <div class="content">
+                  <h6>Monitoring & Observability</h6>
+                  <p class="text-sm text-main text-line-clamp-4">Drift detection, model performance dashboards,
+                    automated alerts</p>
+                  <ul>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-payment"></i>
+                </div>
+                <div class="content">
+                  <h6>Data Engineering Support</h6>
+                  <p class="text-sm text-main text-line-clamp-4">Feature store design, data pipelines (Airflow,
+                    Prefect), data quality checks</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Cloud Support -->
+        <div class="flat-title-2 d-xl-flex justify-content-xl-between mb-3 mb-lg-4">
+          <div class="box-title">
+            <p class="display-md-2 fw-medium">
+              Cloud Support
+            </p>
+            <p class="text-xl mb-2 mb-lg-1">
+              Modernize and Optimize Cloud Operations
+            </p>
+          </div>
+
+        </div>
+        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
+                "slidesPerView": 1,
+                "spaceBetween": 12,
+                "speed": 800,
+                "preventInteractionOnTransition": false, 
+                "touchStartPreventDefault": false,
+                "pagination": { "el": ".sw-pagination-iconbox", "clickable": true },
+                "breakpoints": {
+                    "575": { "slidesPerView":2, "spaceBetween": 12}, 
+                    "992": { "slidesPerView": 3, "spaceBetween": 24}
+                }
+            }'>
+          <div class="swiper-wrapper">
+            <!-- item 1 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-search"></i>
+                </div>
+                <div class="content">
+                  <h6>Cloud Architecture Design</h6>
+                  <p class="text-sm text-main text-line-clamp-4">Multi-cloud/hybrid strategies, high-availability design
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-quality"></i>
+                </div>
+                <div class="content">
+                  <h6>Migration & Modernization</h6>
+                  <p class="text-sm text-main text-line-clamp-4">Lift-and-shift, containerization, serverless migration
+                  </p>
+                  <ul>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="tf-icon-box style-border">
+                <div class="box-icon">
+                  <i class="icon icon-payment"></i>
+                </div>
+                <div class="content">
+                  <h6>Cost Optimization</h6>
+                  <p class="text-sm text-main text-line-clamp-4">FinOps consulting, tagging & budgeting policies </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="d-xl-flex justify-content-center" style="padding: 20px 0;">
+      <a href="shop-default.html" class="tf-btn bg-light-orange-6 border-0 animate-btn">
+        Schedule a meeting
+        <img class="icon" width="24" src="images/icon/arrow.svg" alt="">
+      </a>
+    </div>
+
+
+
+
     <!-- /Our Services -->
 
     <!-- Contact -->
-    <section class="s-contact flat-spacing-13">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="content-left">
-                        <div class="title fw-medium display-md-2">
-                            Contact Us
-                        </div>
-                        <p class="sub-title text-main">
-                            Have a question? Please contact us using the customer support <br> channels below.
-                        </p>
-                        <ul class="contact-list">
-                            <li>
-                                <p>
-                                    Email:
-                                    <a class="link" href="mailto:p6ksolutions@gmail.com">
-                                        p6ksolutions@gmail.com
-                                    </a>
-                                </p>
-                            </li>
-                        </ul>
-                        <ul class="tf-social-icon style-large ">
-                            <li>
-                                <a href="https://www.facebook.com/" class="social-item social-linkedin">
-                                    <i class="icon icon-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="content-right">
-                        <div class="title fw-medium display-md-2">
-                            Get In Touch
-                        </div>
-                        <p class="sub-title text-main">
-                            Please submit all general enquiries in the contact form below and we look forward to
-                            hearing from you soon.
-                        </p>
-                        <div class="form-contact-wrap">
-                            <form method="post" class="form-default">
-                                <div class="wrap">
-                                    <div class="cols">
-                                        <fieldset>
-                                            <label for="name">Your name*</label>
-                                            <input name="name" id="name" class="radius-8" type="text" required>
-                                        </fieldset>
-                                        <fieldset>
-                                            <label for="email">Your email*</label>
-                                            <input name="email" id="email" class="radius-8" type="email" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="cols">
-                                        <fieldset>
-                                            <label for="name">Your phone number</label>
-                                            <input name="name" id="name" class="radius-8" type="text">
-                                        </fieldset>
-                                        <fieldset>
-                                            <label for="email">Your email (Confirm)*</label>
-                                            <input name="email" id="email" class="radius-8" type="email" required>
-                                        </fieldset>
-                                    </div>
-                                    <div class="cols">
-                                        <fieldset class="textarea">
-                                            <label for="message">Message*</label>
-                                            <textarea name="message" id="message" required
-                                                class="radius-8"></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="button-submit send-wrap">
-                                        <button class="tf-btn animate-btn" type="submit">
-                                            Send
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <section id="contact" class="s-contact flat-spacing-13">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="content-left">
+              <div class="title fw-medium display-md-2">
+                Contact Us
+              </div>
+              <p class="sub-title text-main">
+                Have a question? Please contact us using the customer support <br> channels below.
+              </p>
+              <ul class="contact-list">
+                <li>
+                  <p>
+                    Email:
+                    <a class="link" href="mailto:p6ksolutions@gmail.com">
+                      p6ksolutions@gmail.com
+                    </a>
+                  </p>
+                </li>
+              </ul>
+              <ul class="tf-social-icon style-large ">
+                <li>
+                  <a href="https://www.facebook.com/" class="social-item social-linkedin">
+                    <i class="icon icon-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="content-right">
+              <div class="title fw-medium display-md-2">
+                Get In Touch
+              </div>
+              <p class="sub-title text-main">
+                Please submit all general enquiries in the contact form below and we look forward to
+                hearing from you soon.
+              </p>
+              <div class="form-contact-wrap">
+                <form method="post" class="form-default">
+                  <div class="wrap">
+                    <div class="cols">
+                      <fieldset>
+                        <label for="name">Your name*</label>
+                        <input name="name" id="name" class="radius-8" type="text" required>
+                      </fieldset>
+                      <fieldset>
+                        <label for="email">Your email*</label>
+                        <input name="email" id="email" class="radius-8" type="email" required>
+                      </fieldset>
+                    </div>
+                    <div class="cols">
+                      <fieldset>
+                        <label for="name">Your phone number</label>
+                        <input name="name" id="name" class="radius-8" type="text">
+                      </fieldset>
+                      <fieldset>
+                        <label for="email">Your email (Confirm)*</label>
+                        <input name="email" id="email" class="radius-8" type="email" required>
+                      </fieldset>
+                    </div>
+                    <div class="cols">
+                      <fieldset class="textarea">
+                        <label for="message">Message*</label>
+                        <textarea name="message" id="message" required class="radius-8"></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="button-submit send-wrap">
+                      <button class="tf-btn animate-btn" type="submit">
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- /Contact -->
 
@@ -440,18 +631,18 @@
           </div>
         </div>
       </div>
-  <!-- Javascript -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/carousel.js"></script>
-  <script src="js/bootstrap-select.min.js"></script>
-  <script src="js/lazysize.min.js"></script>
-  <script src="js/count-down.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/multiple-modal.js"></script>
-  <script src="js/infinityslide.js"></script>
-  <script src="js/main.js"></script>
+      <!-- Javascript -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/carousel.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/lazysize.min.js"></script>
+      <script src="js/count-down.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/multiple-modal.js"></script>
+      <script src="js/infinityslide.js"></script>
+      <script src="js/main.js"></script>
 </body>
 
 </html>
