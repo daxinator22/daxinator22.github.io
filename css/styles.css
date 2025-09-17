@@ -44,12 +44,12 @@
 @import url(./bootstrap-select.min.css);
 :root {
   --primary: #FFFFFF;
-  --primary-2: #4361EE;
-  --primary-3: #4361EE;
-  --primary-4: #4361EE;
+  --primary-2: #FFFFFF;
+  --primary-3: #FFFFFF;
+  --primary-4: #FFFFFF;
   --primary-green: #39ae52;
   --secondary: #8A919C;
-  --secondary-2: #3A0CA3;
+  --secondary-2: #5D8BD4;
   --secondary-3: #3A0CA3;
   --secondary-4: #3A0CA3;
   --dark: #000000;
@@ -97,15 +97,15 @@
 }
 
 .primary-2 {
-  --primary: #39ae52;
+  --primary: #FFFFFF;
 }
 
 .primary-3 {
-  --primary: #d62c2c;
+  --primary: #FFFFFF;
 }
 
 .primary-4 {
-  --primary: #e4763b;
+  --primary: #FFFFFF;
   --primary-rgb: 228 118 59;
 }
 
