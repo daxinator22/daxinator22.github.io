@@ -517,32 +517,41 @@
                 hearing from you soon.
               </p>
               <div class="form-contact-wrap">
-                <form method="post" class="form-default">
+                <form method="post" class="form-default" id="contactForm">
                   <div class="wrap">
                     <div class="cols">
+                      <fieldset style="width:100%">
+                        <label for="cf_title">Title*</label>
+                        <input name="title" id="cf_title" class="radius-8" type="text" required>
+                      </fieldset>
+                    </div>
+                    <input type="text" name="company" id="company" autocomplete="off" tabindex="-1"
+                      style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+                    <input type="hidden" name="user_email" id="user_email">
+                    <div class="cols">
                       <fieldset>
-                        <label for="name">Your name*</label>
-                        <input name="name" id="name" class="radius-8" type="text" required>
+                        <label for="cf_name">Your name*</label>
+                        <input name="name" id="cf_name" class="radius-8" type="text" required>
                       </fieldset>
                       <fieldset>
-                        <label for="email">Your email*</label>
-                        <input name="email" id="email" class="radius-8" type="email" required>
+                        <label for="cf_email">Your email*</label>
+                        <input name="email" id="cf_email" class="radius-8" type="email" required>
                       </fieldset>
                     </div>
                     <div class="cols">
                       <fieldset>
-                        <label for="name">Your phone number</label>
-                        <input name="name" id="name" class="radius-8" type="text">
+                        <label for="cf_phone">Your phone number*</label>
+                        <input name="phone" id="cf_phone" class="radius-8" type="text" required>
                       </fieldset>
                       <fieldset>
-                        <label for="email">Your email (Confirm)*</label>
-                        <input name="email" id="email" class="radius-8" type="email" required>
+                        <label for="cf_confirm_email">Your email (Confirm)*</label>
+                        <input name="confirm_email" id="cf_confirm_email" class="radius-8" type="email" required>
                       </fieldset>
                     </div>
                     <div class="cols">
                       <fieldset class="textarea">
-                        <label for="message">Message*</label>
-                        <textarea name="message" id="message" required class="radius-8"></textarea>
+                        <label for="cf_message">Message*</label>
+                        <textarea name="message" id="cf_message" required class="radius-8"></textarea>
                       </fieldset>
                     </div>
                     <div class="button-submit send-wrap">
@@ -550,6 +559,7 @@
                         Send
                       </button>
                     </div>
+                    <div id="contactStatus" class="mt-3 text-main" aria-live="polite" style="min-height:1.25rem"></div>
                   </div>
                 </form>
               </div>
@@ -592,6 +602,47 @@
       <script src="js/multiple-modal.js"></script>
       <script src="js/infinityslide.js"></script>
       <script src="js/main.js"></script>
+      <!-- EmailJS logic -->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script>
+        const EMAILJS_PUBLIC_KEY = '0VBw7hIDGiJMBMjyD';
+        const EMAILJS_SERVICE_ID = 'service_r7kbnha';
+        const EMAILJS_TEMPLATE_ID = 'template_af4mhut';
+
+        document.addEventListener('DOMContentLoaded', () => {
+          if (window.emailjs) {
+            try { emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); } catch (_) { }
+          }
+          const form = document.getElementById('contactForm');
+          const statusEl = document.getElementById('contactStatus');
+          if (!form) return;
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (!window.emailjs) { setStatus('Email service unavailable.'); return; }
+            const title = getVal('#cf_title');
+            const name = getVal('#cf_name');
+            const email = getVal('#cf_email');
+            const confirm = getVal('#cf_confirm_email');
+            const phone = getVal('#cf_phone');
+            const message = getVal('#cf_message');
+            if (!title || !name || !email || !confirm || !phone || !message) { setStatus('Please fill every field.'); return; }
+            if (email !== confirm) { setStatus('Emails must match.'); return; }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { setStatus('Invalid email format.'); return; }
+            setStatus('Sending...');
+            const params = { title, name, email, user_email: email, phone: phone || 'N/A', message };
+            try {
+              await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params);
+              form.reset();
+              setStatus('Sent!');
+            } catch (err) {
+              console.error(err);
+              setStatus('Failed. Try later.');
+            }
+          });
+          function getVal(sel) { const el = document.querySelector(sel); return el ? el.value.trim() : ''; }
+          function setStatus(msg) { if (statusEl) statusEl.textContent = msg; }
+        });
+      </script>
 </body>
 
 </html>
