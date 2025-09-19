@@ -49,8 +49,8 @@
   --primary-4: #FFFFFF;
   --primary-green: #39ae52;
   --secondary: #8A919C;
-  --secondary-2: #5D8BD4;
-  --secondary-3: #3A0CA3;
+  --secondary-2: #4588F5;
+  --secondary-3: #0627BA;
   --secondary-4: #3A0CA3;
   --dark: #000000;
   --dark-2: #101828;
@@ -81,8 +81,8 @@
   --surface-2: #f7f7f7;
   --surface-3: #f3f3f3;
   --shadow-1: 0px 4px 20px 0px #0000001a;
-  --gradient-1: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-  --gradient-2: linear-gradient(180deg, rgba(231, 236, 210, 0) 0%, #e7ecd2 100%);
+  --gradient-1: linear-gradient(270deg, var(--secondary-2) 0%, #b3de3c 100%);
+  --gradient-2: linear-gradient(180deg, var(--secondary-2) 0%, #e7ecd2 100%);
   --backdrop: rgba(0, 0, 0, 0.4);
   --bg-scrollbar-track: #f1f1f1;
   --bg-scrollbar-thumb: #c1c1c1;
@@ -1666,7 +1666,7 @@ video {
 }
 
 .bg-gradient-2 {
-  background: var(--gradient-2);
+  background: linear-gradient(270deg, var(--secondary-2) 0%, var(--secondary-3) 100%);
 }
 
 .bg-gradient-3 {
