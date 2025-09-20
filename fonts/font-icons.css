@@ -25,8 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-stats-bars:before {
+  content: "\ea01";
+}
+.icon-database:before {
+  content: "\e9c9";
+}
+.icon-cloud-upload:before {
+  content: "\ea28";
+}
+.icon-coin-dollar:before {
+  content: "\e9a0";
+}
+.icon-loop:before {
+  content: "\ea92";
+}
+.icon-stack:before {
+  content: "\e993";
+}
+.icon-map:before {
+  content: "\e9b1";
+}
+
 .icon-shop:before {
   content: "\e900";
+}
+.icon-pacman:before {
+  content: "\e97B";
 }
 .icon-menu:before {
   content: "\e901";
