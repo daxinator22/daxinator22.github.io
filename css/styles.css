@@ -7967,10 +7967,10 @@ button.animate-btn::after,
   padding: 33px 0px;
 }
 .header-default .box-nav-menu .menu-item.active .item-link, .header-default .box-nav-menu .menu-item:hover .item-link {
-  color: var(--primary);
+  color: var(--secondary-2);
 }
 .header-default .box-nav-menu .menu-item.active .menu-link-text.active {
-  color: var(--primary);
+  color: var(--secondary-2);
 }
 .header-default .box-nav-menu .menu-item:hover .item-link .icon {
   transform: rotate(180deg);
