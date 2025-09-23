@@ -550,7 +550,7 @@
                     </div>
                     <div class="cols">
                       <fieldset>
-                        <label for="cf_phone">Your phone number*</label>
+                        <label for="cf_phone">Your phone number</label>
                         <input name="phone" id="cf_phone" class="radius-8" type="text" required>
                       </fieldset>
                       <fieldset>
@@ -637,7 +637,7 @@
             const confirm = getVal('#cf_confirm_email');
             const phone = getVal('#cf_phone');
             const message = getVal('#cf_message');
-            if (!title || !name || !email || !confirm || !phone || !message) { setStatus('Please fill every field.'); return; }
+            if (!title || !name || !email || !confirm || !message) { setStatus('Please fill every required field.'); return; }
             if (email !== confirm) { setStatus('Emails must match.'); return; }
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { setStatus('Invalid email format.'); return; }
             setStatus('Sending...');
