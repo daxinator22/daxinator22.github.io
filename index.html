@@ -6,17 +6,16 @@
 <!--<![endif]-->
 
 <head>
-  
-  <!-- Google tag (gtag.js) Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH12DQ3729"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RH12DQ3729"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-RH12DQ3729');
-  </script>
-  
+      gtag('config', 'G-RH12DQ3729');
+    </script>
+
   <meta charset="utf-8">
   <title>P6K Solutions</title>
   <meta name="author" content="themesflat.com">
@@ -150,7 +149,7 @@
     <!-- /Slider -->
 
     <!-- Why Choose -->
-    <section id="about" class="flat-spacing-3">
+    <section id="about" class="pt-5 pb-3">
       <div class="container">
         <div class="flat-title text-center">
           <p class="display-md-2 fw-medium">
@@ -193,6 +192,29 @@
       </div>
     </section>
     <!-- /Why Choose -->
+
+    <!-- Case Studies -->
+    <section class="pt-2 pb-5">
+      <div class="container">
+        <div class="flat-title text-center">
+        </div>
+        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
+          "slidesPerView": 1,
+          "spaceBetween": 30,
+          "speed": 800,
+          "loop": true,
+          "autoplay": {"delay": 20000, "disableOnInteraction": false},
+          "pagination": {"el": ".sw-pagination-case", "clickable": true}
+        }'>
+          <div class="swiper-wrapper" id="case-studies-container">
+            <!-- Case studies will be populated here from case-studies-data.js -->
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="sw-dots sw-pagination-case justify-content-center mt-4"></div>
+      </div>
+    </section>
+    <!-- /Case Studies -->
 
     <!-- Meet the Team -->
     <section class="flat-spacing-5 bg-gradient-2 text-white">
@@ -591,6 +613,8 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/swiper-bundle.min.js"></script>
       <script src="js/carousel.js"></script>
+      <script src="js/case-studies-data.js"></script>
+      <script src="js/carousel-templates.js"></script>
       <script src="js/bootstrap-select.min.js"></script>
       <script src="js/lazysize.min.js"></script>
       <script src="js/count-down.js"></script>
@@ -654,4 +678,3 @@
 </body>
 
 </html>
-
