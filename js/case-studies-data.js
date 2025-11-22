@@ -9,11 +9,4 @@ caseStudyData = [
 		outcome:
 			"The AWS environment was successfully deployed and validated across all microservices, the internal team gained a reliable, repeatable deployment process, and deployment time and troubleshooting efforts were reduced significantly",
 	},
-	{
-		id: 2,
-		title: "Title Coming Soon",
-		challenge: "Challege coming soon.",
-		approach: "Approach coming soon",
-		outcome: "Outcome coming soon.",
-	},
 ];
