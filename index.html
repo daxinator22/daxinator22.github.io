@@ -148,6 +148,29 @@
     </section>
     <!-- /Slider -->
 
+    <!-- Testimonials -->
+    <section class="pt-5 pb-4">
+      <div class="container">
+        <div class="testimonials-wrapper" style="background-color: #f8f9fa; border-radius: 16px; padding: 2rem; margin: 0 auto; max-width: 95%;">
+          <div dir="ltr" class="swiper tf-swiper" data-swiper='{
+          "slidesPerView": 1,
+          "spaceBetween": 30,
+          "speed": 800,
+          "loop": true,
+          "autoplay": {"delay": 15000, "disableOnInteraction": false},
+          "pagination": {"el": ".sw-pagination-testimonials", "clickable": true}
+        }'>
+          <div class="swiper-wrapper" id="testimonials-container">
+            <!-- Testimonials will be populated here from testimonials-data.js -->
+          </div>
+        </div>
+          <!-- Pagination -->
+          <div class="sw-dots sw-pagination-testimonials justify-content-center mt-4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- /Testimonials -->
+
     <!-- Why Choose -->
     <section id="about" class="pt-5 pb-3">
       <div class="container">
@@ -614,6 +637,7 @@
       <script src="js/swiper-bundle.min.js"></script>
       <script src="js/carousel.js"></script>
       <script src="js/case-studies-data.js"></script>
+      <script src="js/testimonials-data.js"></script>
       <script src="js/carousel-templates.js"></script>
       <script src="js/bootstrap-select.min.js"></script>
       <script src="js/lazysize.min.js"></script>
