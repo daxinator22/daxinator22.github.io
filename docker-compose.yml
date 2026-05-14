@@ -1,0 +1,10 @@
+services:
+  server:
+    image: python:3.14.4-alpine3.23
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - 8080:8080
+    command: python3 -m http.server 8080
+
