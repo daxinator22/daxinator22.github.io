@@ -1549,7 +1549,8 @@
     total_Price();
     preloader();
     goTop();
-    new WOW().init();
-
+    if (window.WOW) {
+      new WOW().init();
+    }
   });
 })(jQuery);

@@ -20,15 +20,14 @@
   <title>P6K Solutions</title>
   <meta name="author" content="themesflat.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="P6K Soltuions - MLOps/DevOps strategy, implementation and optimization in Utah.">
+  <meta name="description" content="P6K Solutions - MLOps/DevOps strategy, implementation and optimization in Utah.">
   <!-- font -->
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="fonts/font-icons.css">
   <!-- css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/p6k.css">
   <style>
     html {
       scroll-behavior: smooth;
@@ -74,11 +73,11 @@
               </a>
             </div>
             <div class="col-xl-3 col-md-4 col-6">
-              <a href="home-florist.html" class="logo-header">
+              <a href="#home" class="logo-header">
                 <img src="./wolf_logo.png" alt="P6K Solutions logo" class="logo">
               </a>
             </div>
-            <div class="col-xl-5 d-none d-xl-block text-center">
+            <div class="col-xl-6 d-none d-xl-block text-center">
               <nav class="box-navigation text-center">
                 <ul class="box-nav-menu">
                   <li class="menu-item">
@@ -87,8 +86,14 @@
                   <li class="menu-item">
                     <a href="#about" class="item-link">About Us</a>
                   </li>
-                  <li class="menu-item">
+                  <li class="menu-item position-relative p6k-has-submenu">
                     <a href="#services" class="item-link">Services</a>
+                    <div class="sub-menu p6k-nav-submenu">
+                      <ul class="menu-list">
+                        <li><a href="#services" class="menu-link-text">All Services</a></li>
+                        <li><a href="macos-hosting.html" class="menu-link-text">macOS Hosting</a></li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="menu-item position-relative">
                     <a href="#contact" class="item-link">Contact Us</a>
@@ -96,464 +101,235 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-xl-4 col-md-4 col-3">
+            <div class="col-xl-3 col-md-4 col-3">
               <ul class="tf-social-icon style-large">
                 <li>
-                  <a href="https://linkedin.com/company/p6k-solutions/" class="social-item social-linkedin"><i
+                  <a href="https://linkedin.com/company/p6k-solutions/" class="social-item social-linkedin" aria-label="P6K Solutions on LinkedIn" target="_blank" rel="noopener noreferrer"><i
                       class="icon icon-linkedin"></i></a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+      </div>
     </header>
     <!-- /Header -->
-    <!-- Slider -->
-    <section id="home" class="tf-slideshow slider-space1 slider-viewport slider-default">
-      <div dir="ltr" class="swiper tf-sw-slideshow slider-effect-fade" data-preview="1" data-tablet="1" data-mobile="1"
-        data-centered="false" data-space="0" data-space-mb="0" data-loop="true" data-auto-play="true" data-speed="1000">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slider-wrap">
-              <div class="image">
-                <img src="./background.png" alt="slider" class="lazyload">
-              </div>
-              <div class="box-content">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-12 col-12 col-sm-6">
-                      <div class="content-slider">
-                        <div class="box-title-slider">
-                          <h2 class="heading fw-medium fade-item fade-item-1 text-white">
-                            P6K Solutions
-                          </h2>
-                          <p class="sub text-md fade-item fade-item-2 text-white">
-                            MLOps/DevOps strategy, implementation and optimization in Utah
-                          </p>
-                        </div>
-                        <div class="box-btn-slider fade-item fade-item-3">
-                          <a href="#services" class="tf-btn bg-secondary-2 border-0 animate-btn">
-                            Our Services
-                            <img class="icon" width="24" src="images/icon/arrow.svg" alt="">
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- Hero -->
+    <section id="home" class="p6k-hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="p6k-eyebrow">Utah DevOps and MLOps consulting</p>
+            <h1>DevOps and MLOps systems built for reliable growth</h1>
+            <p class="p6k-hero-copy">We help teams automate delivery, modernize cloud infrastructure, and operate production ML with confidence.</p>
+            <div class="p6k-hero-actions">
+              <a href="#contact" class="p6k-btn p6k-btn-primary">Let's Talk</a>
+              <a href="#services" class="p6k-btn p6k-btn-secondary">Explore Services</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="p6k-hero-panel" aria-label="Delivery system diagram">
+              <div class="p6k-panel-row"><span>commit</span><i></i><strong>validated</strong></div>
+              <div class="p6k-panel-row"><span>pipeline</span><i></i><strong>automated</strong></div>
+              <div class="p6k-panel-row"><span>cloud</span><i></i><strong>observable</strong></div>
+              <div class="p6k-panel-row"><span>model</span><i></i><strong>monitored</strong></div>
             </div>
           </div>
         </div>
-    </section>
-    <!-- /Slider -->
-
-    <!-- Testimonials -->
-    <section class="pt-5 pb-4">
-      <div class="container">
-        <div class="testimonials-wrapper" style="background-color: #f8f9fa; border-radius: 16px; padding: 2rem; margin: 0 auto; max-width: 95%;">
-          <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-          "slidesPerView": 1,
-          "spaceBetween": 30,
-          "speed": 800,
-          "loop": true,
-          "autoplay": {"delay": 15000, "disableOnInteraction": false},
-          "pagination": {"el": ".sw-pagination-testimonials", "clickable": true}
-        }'>
-          <div class="swiper-wrapper" id="testimonials-container">
-            <!-- Testimonials will be populated here from testimonials-data.js -->
-          </div>
-        </div>
-          <!-- Pagination -->
-          <div class="sw-dots sw-pagination-testimonials justify-content-center mt-4"></div>
+        <div class="p6k-cred-strip" aria-label="Core capabilities">
+          <span>CI/CD Automation</span>
+          <span>Cloud Architecture</span>
+          <span>MLOps Pipelines</span>
+          <span>Monitoring and Reliability</span>
+          <span>Cost Optimization</span>
         </div>
       </div>
     </section>
-    <!-- /Testimonials -->
+    <!-- /Hero -->
 
-    <!-- Why Choose -->
-    <section id="about" class="pt-5 pb-3">
+    <!-- About -->
+    <section id="about" class="p6k-section p6k-about">
       <div class="container">
-        <div class="flat-title text-center">
-          <p class="display-md-2 fw-medium">
-            About P6K Solutions
-          </p>
-          <p class="text-md text-main">
-            We streamline software delivery with automated CI/CD pipelines, cloud infrastructure and end-to-end
-            <br class="d-none d-lg-block">monitoring. We remove manual bottlenecks so your team can focus on innovating.
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-xl-7 col-md-6">
-            <ul class="list-esd d-md-flex flex-md-column justify-content-md-center h-100">
-              <li class="item">
-                <h6>
-                  Improving Software Development
-                </h6>
-                <p>At P6K Solutions, we believe that great software starts with great processes. Our philosophy is
-                  simple: when your development lifecycle runs smoothly, your customers receive better products, faster.
-                  That’s why everything we do is centered on creating seamless, reliable, and automated workflows that
-                  empower your team to focus on innovation instead of firefighting.<br><br>
-                  We provide modern DevOps solutions for Utah-based businesses that focus on building and optimizing CI/CD pipelines, automating cloud infrastructure, and implementing monitoring systems that give you confidence in every release. 
-                  By eliminating manual bottlenecks and reducing human error, we help you deliver consistent, high-quality experiences to your customers.<br><br>
-                  Whether you’re a startup in Utah building your first SaaS product or an established business serving millions
-                  of users worldwide, we tailor our solutions to fit your unique challenges. Our goal is not just to
-                  provide technical expertise, but to act as a partner helping you scale efficiently, minimize downtime,
-                  and stay ahead in a competitive market.<br><br>
-                  At the end of the day, we measure our success by yours. When your applications run smoothly, your
-                  customers stay happy, and your business grows stronger. That’s the standard we set at P6K Solutions.
-                </p>
-              </li>
-            </ul>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="p6k-eyebrow">About P6K Solutions</p>
+            <h2>We remove the operational friction that slows software teams down.</h2>
+            <p class="p6k-lead">P6K designs and implements the delivery systems, cloud foundations, and production safeguards that let teams ship with less manual work and fewer surprises.</p>
+            <p>Based in Utah, we work with teams that need practical DevOps and MLOps improvements without bloated consulting overhead.</p>
           </div>
-          <div class="col-xl-5 col-md-6">
-            <div class="image radius-16 overflow-hidden w-100 h-100">
-              <img src="./about.jpg" alt="Computer desk with coffee mug" class="lazyload w-100 h-100 object-fit-cover">
+          <div class="col-lg-6">
+            <div class="p6k-about-card">
+              <img src="./about.jpg" alt="Computer desk with coffee mug" class="lazyload">
+              <div class="p6k-about-points">
+                <div><strong>Automated release pipelines</strong><span>Reduce handoffs, failed deploys, and manual checks.</span></div>
+                <div><strong>Reliable cloud infrastructure</strong><span>Build environments your team can reproduce and operate.</span></div>
+                <div><strong>Monitoring that matters</strong><span>Catch reliability and model issues before customers do.</span></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- /Why Choose -->
+    <!-- /About -->
 
-    <!-- Case Studies -->
-    <section class="pt-2 pb-5">
+    <!-- Proof -->
+    <section class="p6k-section p6k-proof">
       <div class="container">
-        <div class="flat-title text-center">
+        <div class="p6k-section-heading">
+          <p class="p6k-eyebrow">Client result</p>
+          <h2>Deploying microservices to AWS with confidence</h2>
         </div>
-        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-          "slidesPerView": 1,
-          "spaceBetween": 30,
-          "speed": 800,
-          "loop": true,
-          "autoplay": {"delay": 20000, "disableOnInteraction": false},
-          "pagination": {"el": ".sw-pagination-case", "clickable": true}
-        }'>
-          <div class="swiper-wrapper" id="case-studies-container">
-            <!-- Case studies will be populated here from case-studies-data.js -->
-          </div>
-        </div>
-        <!-- Pagination -->
-        <div class="sw-dots sw-pagination-case justify-content-center mt-4"></div>
-      </div>
-    </section>
-    <!-- /Case Studies -->
-
-    <!-- Meet the Team -->
-    <section class="flat-spacing-5 bg-gradient-2 text-white">
-      <div class="container">
-        <div class="flat-title wow fadeInUp">
-          <h4 class="title text-light">Meet the Team</h4>
-        </div>
-        <div dir="ltr" class="xl-px-26 swiper tf-swiper wow fadeInUp" data-swiper='{
-                        "slidesPerView": 2,
-                        "spaceBetween": 12,
-                        "speed": 800,
-                        "observer": true,
-                        "observeParents": true,
-                        "slidesPerGroup": 2,
-                        "navigation": {
-                            "clickable": true,
-                            "nextEl": ".nav-next-categories",
-                            "prevEl": ".nav-prev-categories"
-                        },
-                        "pagination": { "el": ".sw-pagination-categories", "clickable": true },
-                        "breakpoints": {
-                        "575": { "slidesPerView": 3, "spaceBetween": 12 ,"slidesPerGroup": 2 },    
-                        "768": { "slidesPerView": 4, "spaceBetween": 24, "slidesPerGroup": 3 }
-                        }
-                    }'>
-          <div class="swiper-wrapper">
-            <!-- item 1 -->
-            <div class="swiper-slide">
-              <div class="wg-cls style-circle hover-img">
-                <a href="https://linkedin.com/in/dax-thompson-a268b2170/" class="image img-style d-block">
-                  <img src="./dax_headshot.jpg" alt="Dax Thompson headshot" class="lazyload">
-                </a>
-                <div class="cls-content text-center">
-                  <a href="https://linkedin.com/in/dax-thompson-a268b2170/"
-                    class="link text-md fw-medium text-light">Dax Thompson</a>
-                  <p>DevOps Engineer</p>
-                </div>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="p6k-result-card">
+              <div>
+                <span>Challenge</span>
+                <p>The client needed a maintainable AWS environment for new microservices, but service configuration gaps were creating blockers and failed deployments.</p>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="wg-cls style-circle hover-img">
-                <a href="https://www.linkedin.com/in/kcaseychamberlain/" class="image img-style d-block">
-                  <img src="./casey_headshot.jpg" alt="Casey Chamberlain headshot" class="lazyload">
-                </a>
-                <div class="cls-content text-center">
-                  <a href="https://www.linkedin.com/in/kcaseychamberlain/"
-                    class="link text-md fw-medium text-light">Casey Chamberlain</a>
-                  <p>Software Engineer</p>
-                </div>
+              <div>
+                <span>Approach</span>
+                <p>P6K reviewed the AWS setup, created repeatable configuration documentation, and worked directly with the internal team through hands-on mentoring.</p>
+              </div>
+              <div>
+                <span>Outcome</span>
+                <p>The team gained a validated AWS deployment process, stronger confidence in the platform, and reusable instructions for future services.</p>
               </div>
             </div>
           </div>
-          <span class="d-flex d-xl-none sw-dot-default sw-pagination-categories justify-content-center"></span>
+          <div class="col-lg-5">
+            <blockquote class="p6k-quote-card">
+              <img src="images/logo/controlByWeb.png" alt="ControlByWeb logo">
+              <p>"P6K Solutions helped us get up and running with the new AWS services in a couple of weeks. We were just as comfortable with the AWS services after their help as we would have been had we spent months learning it ourselves."</p>
+              <cite>Ryan Kimball, Engineering Manager</cite>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
-    <!-- /Meet the Team -->
+    <!-- /Proof -->
 
-    <!-- Our Services -->
-    <!-- DevOps -->
-    <section id="services" class=" flat-spacing-3">
+    <!-- Services -->
+    <section id="services" class="p6k-section p6k-services">
       <div class="container">
-        <div class="flat-title-2 d-xl-flex justify-content-xl-between mb-3 mb-lg-4">
-          <div class="box-title">
-            <p class="display-md-2 fw-medium">
-              DevOps
-            </p>
-            <p class="text-xl mb-2 mb-lg-1">
-              Reliable, Automated, Observable
-            </p>
-          </div>
-
+        <div class="p6k-section-heading p6k-section-heading-wide">
+          <p class="p6k-eyebrow">Services</p>
+          <h2>Technical systems for teams that need to ship, scale, and stabilize.</h2>
         </div>
-        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-                "slidesPerView": 1,
-                "spaceBetween": 12,
-                "speed": 800,
-                "preventInteractionOnTransition": false, 
-                "touchStartPreventDefault": false,
-                "pagination": { "el": ".sw-pagination-iconbox", "clickable": true },
-                "breakpoints": {
-                    "575": { "slidesPerView":2, "spaceBetween": 12}, 
-                    "992": { "slidesPerView": 3, "spaceBetween": 24}
-                }
-            }'>
-          <div class="swiper-wrapper">
-            <!-- item 2 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-map"></i>
-                </div>
-                <div class="content">
-                  <h6>Strategy & Roadmap</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We analyze your workflows and craft a custom plan to
-                    streamline delivery, improve reliability and scale your DevOps practices.</p>
-                </div>
-              </div>
-            </div>
-            <!-- item 1 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-shipped"></i>
-                </div>
-                <div class="content">
-                  <h6>CI/CD Implementation</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We design and deploy automated pipelines that speed up
-                    releases, reduce errors and ensure consistent, high-quality deployments.</p>
-                </div>
-              </div>
-            </div>
-            <!-- item 2 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-categories"></i>
-                </div>
-                <div class="content">
-                  <h6>Monitoring & Logging</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We set up unified monitoring and logging to give you
-                    real-time visibility, faster issue detection and reliable system performance.</p>
-                </div>
-              </div>
-            </div>
+        <div class="p6k-service-group">
+          <div class="p6k-service-intro">
+            <span>01</span>
+            <h3>Automate Delivery</h3>
+            <p>DevOps systems that make releases faster, safer, and easier to repeat.</p>
+          </div>
+          <div class="p6k-card-grid">
+            <article class="p6k-service-card"><i class="icon icon-map"></i><h4>Strategy and Roadmap</h4><p>Assess workflows, identify bottlenecks, and define practical implementation steps.</p></article>
+            <article class="p6k-service-card"><i class="icon icon-shipped"></i><h4>CI/CD Implementation</h4><p>Design automated pipelines that improve release speed and reduce deployment errors.</p></article>
+            <article class="p6k-service-card"><i class="icon icon-categories"></i><h4>Monitoring and Logging</h4><p>Build visibility across applications, infrastructure, and production incidents.</p></article>
           </div>
         </div>
-
-        <!-- MLOps -->
-        <div class="flat-title-2 d-xl-flex justify-content-xl-between mb-lg-4 mt-5">
-          <div class="box-title">
-            <p class="display-md-2 fw-medium">
-              MLOps
-            </p>
-            <p class="text-xl mb-2 mb-lg-1">Scalable, Adaptive, Intelligent</p>
+        <div class="p6k-service-group">
+          <div class="p6k-service-intro">
+            <span>02</span>
+            <h3>Operationalize Machine Learning</h3>
+            <p>MLOps support for repeatable model delivery and production-grade monitoring.</p>
           </div>
-
-        </div>
-        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-                "slidesPerView": 1,
-                "spaceBetween": 12,
-                "speed": 800,
-                "preventInteractionOnTransition": false, 
-                "touchStartPreventDefault": false,
-                "pagination": { "el": ".sw-pagination-iconbox", "clickable": true },
-                "breakpoints": {
-                    "575": { "slidesPerView":2, "spaceBetween": 12}, 
-                    "992": { "slidesPerView": 3, "spaceBetween": 24}
-                }
-            }'>
-          <div class="swiper-wrapper">
-            <!-- item 2 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-database"></i>
-                </div>
-                <div class="content">
-                  <h6>Data Engineering Support</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We build and optimize data pipelines thatt prepare,
-                    transform and deliver reliable datasets for machine learning workflows, ensuring scalable,
-                    high-quality model training and deployment.</p>
-                </div>
-              </div>
-            </div>
-            <!-- item 1 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-loop"></i>
-                </div>
-                <div class="content">
-                  <h6>Model Lifecycle Automation</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We automate model training, testing, and deployment to
-                    streamline updates, reduce manual effort and keep ML models accurate and production-ready.</p>
-                </div>
-              </div>
-            </div>
-            <!-- item 2 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-stats-bars"></i>
-                </div>
-                <div class="content">
-                  <h6>Monitoring & Observability</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We implement end-to-end monitoring to track
-                    performance, detect drift and maintain reliable, production-grade machine learning systems.</p>
-                  <ul>
-                </div>
-              </div>
-            </div>
-
+          <div class="p6k-card-grid">
+            <article class="p6k-service-card"><i class="icon icon-database"></i><h4>Data Engineering Support</h4><p>Build and optimize pipelines that prepare reliable datasets for ML workflows.</p></article>
+            <article class="p6k-service-card"><i class="icon icon-loop"></i><h4>Model Lifecycle Automation</h4><p>Automate training, testing, deployment, and update workflows for production models.</p></article>
+            <article class="p6k-service-card"><i class="icon icon-stats-bars"></i><h4>ML Observability</h4><p>Track performance, detect drift, and maintain reliable machine learning systems.</p></article>
           </div>
         </div>
-
-
-
-
-        <!-- Cloud Support -->
-        <div class="flat-title-2 d-xl-flex justify-content-xl-between mb-lg-4 mt-5">
-          <div class="box-title">
-            <p class="display-md-2 fw-medium">
-              Cloud Support
-            </p>
-            <p class="text-xl mb-2 mb-lg-1">
-              Flexible, Seamless, Cost-Effective
-            </p>
+        <div class="p6k-service-group">
+          <div class="p6k-service-intro">
+            <span>03</span>
+            <h3>Modernize Cloud Infrastructure</h3>
+            <p>Cloud foundations that are scalable, cost-aware, and maintainable by your team.</p>
           </div>
-
-        </div>
-        <div dir="ltr" class="swiper tf-swiper" data-swiper='{
-                "slidesPerView": 1,
-                "spaceBetween": 12,
-                "speed": 800,
-                "preventInteractionOnTransition": false, 
-                "touchStartPreventDefault": false,
-                "pagination": { "el": ".sw-pagination-iconbox", "clickable": true },
-                "breakpoints": {
-                    "575": { "slidesPerView":2, "spaceBetween": 12}, 
-                    "992": { "slidesPerView": 3, "spaceBetween": 24}
-                }
-            }'>
-          <div class="swiper-wrapper">
-            <!-- item 1 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-stack"></i>
-                </div>
-                <div class="content">
-                  <h6>Cloud Architecture Design</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We design scalable, secure and cost-effective cloud
-                    architecture plans that align with your business goals and future growth.</p>
-                </div>
-              </div>
-            </div>
-            <!-- item 2 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-cloud-upload"></i>
-                </div>
-                <div class="content">
-                  <h6>Migration & Modernization</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We plan and guide the transition of your applications
-                    and infrastructure to the cloud, ensuring a modern, efficient and future-ready environment.</p>
-                  <ul>
-                </div>
-              </div>
-            </div>
-            <!-- item 2 -->
-            <div class="swiper-slide">
-              <div class="tf-icon-box style-border">
-                <div class="box-icon">
-                  <i class="icon icon-coin-dollar"></i>
-                </div>
-                <div class="content">
-                  <h6>Cost Optimization</h6>
-                  <p class="text-sm text-main text-line-clamp-4">We analyze your cloud usage and implement strategies to
-                    reduce costs, improve efficiency and maximize the value of your cloud investments.</p>
-                </div>
-              </div>
-            </div>
+          <div class="p6k-card-grid">
+            <article class="p6k-service-card"><i class="icon icon-stack"></i><h4>Cloud Architecture</h4><p>Design secure, scalable architecture aligned with your product and business goals.</p></article>
+            <article class="p6k-service-card"><i class="icon icon-cloud-upload"></i><h4>Migration and Modernization</h4><p>Move applications and infrastructure into cloud patterns that support future growth.</p></article>
+            <article class="p6k-service-card"><i class="icon icon-coin-dollar"></i><h4>Cost Optimization</h4><p>Analyze usage, right-size resources, and reduce waste without sacrificing reliability.</p></article>
           </div>
-        </div>
-        <div class="d-xl-flex justify-content-center mt-5" style="padding: 20px 0;">
-          <a href="https://calendly.com/p6ksolutions/30min" class="tf-btn bg-secondary-2 border-0 animate-btn">
-            Schedule a meeting
-            <img class="icon" width="24" src="images/icon/arrow.svg" alt="">
-          </a>
         </div>
       </div>
     </section>
-    <!-- /Our Services -->
+    <!-- /Services -->
+
+    <!-- Process -->
+    <section class="p6k-section p6k-process">
+      <div class="container">
+        <div class="p6k-section-heading">
+          <p class="p6k-eyebrow">How we work</p>
+          <h2>Practical implementation, not slideware.</h2>
+        </div>
+        <div class="p6k-process-grid">
+          <div><span>01</span><h4>Assess</h4><p>Review delivery process, infrastructure, reliability gaps, and team constraints.</p></div>
+          <div><span>02</span><h4>Design</h4><p>Create a roadmap that fits your systems, budget, and operating model.</p></div>
+          <div><span>03</span><h4>Implement</h4><p>Build pipelines, cloud automation, monitoring, and ML operations workflows.</p></div>
+          <div><span>04</span><h4>Handoff</h4><p>Document the system and enable your team to operate it confidently.</p></div>
+        </div>
+      </div>
+    </section>
+    <!-- /Process -->
+
+    <!-- Team -->
+    <section class="p6k-section p6k-team">
+      <div class="container">
+        <div class="p6k-section-heading">
+          <p class="p6k-eyebrow">Team</p>
+          <h2>Senior technical builders, directly involved.</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <article class="p6k-team-card">
+              <img src="./dax_headshot.jpg" alt="Dax Thompson headshot" class="lazyload">
+              <div><h3>Dax Thompson</h3><p>DevOps Engineer</p><span>DevOps</span><span>AWS</span><span>CI/CD</span></div>
+              <a href="https://linkedin.com/in/dax-thompson-a268b2170/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-5">
+            <article class="p6k-team-card">
+              <img src="./casey_headshot.jpg" alt="Casey Chamberlain headshot" class="lazyload">
+              <div><h3>Casey Chamberlain</h3><p>Software Engineer</p><span>Software Engineering</span><span>Cloud Systems</span><span>Automation</span></div>
+              <a href="https://www.linkedin.com/in/kcaseychamberlain/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Team -->
 
     <!-- Contact -->
-    <section id="contact" class="s-contact flat-spacing-13">
+    <section id="contact" class="s-contact p6k-section p6k-contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <div class="content-left">
-              <div class="title fw-medium display-md-2">
-                Contact Us
+          <div class="col-lg-5">
+            <div class="content-left p6k-contact-card">
+              <p class="p6k-eyebrow">Start the conversation</p>
+              <div class="title fw-medium display-md-2">Let's talk through the next bottleneck.</div>
+              <p class="sub-title">Whether you need macOS hosting, cloud infrastructure, CI/CD, or MLOps support, we can help map the next practical step.</p>
+              <div class="p6k-contact-actions">
+                <a href="https://calendly.com/p6ksolutions/30min" class="p6k-contact-action" target="_blank" rel="noopener noreferrer">
+                  <span>Book a Consultation</span>
+                  <strong>Pick a time that works</strong>
+                </a>
+                <a href="https://linkedin.com/company/p6k-solutions/" class="p6k-contact-action" target="_blank" rel="noopener noreferrer">
+                  <span>Connect on LinkedIn</span>
+                  <strong>Follow P6K Solutions</strong>
+                </a>
               </div>
-              <p class="sub-title text-main">
-                Have a question? Please contact us using the customer support <br> channels below.
-              </p>
-              <ul class="contact-list">
-                <li>
-                  <p>
-                    Email:
-                    <a class="link" href="mailto:p6ksolutions@gmail.com">
-                      p6ksolutions@gmail.com
-                    </a>
-                  </p>
-                </li>
-              </ul>
-              <ul class="tf-social-icon style-large ">
-                <li>
-                  <a href="https://linkedin.com/company/p6k-solutions/" class="social-item social-linkedin">
-                    <i class="icon icon-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+              <div class="p6k-contact-fit" aria-label="Good fit for">
+                <span>macOS hosting</span>
+                <span>CI/CD automation</span>
+                <span>Cloud reliability</span>
+                <span>MLOps workflows</span>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <div class="content-right">
-              <div class="title fw-medium display-md-2">
-                Get In Touch
-              </div>
-              <p class="sub-title text-main">
-                Please submit all general enquiries in the contact form below and we look forward to
-                hearing from you soon.
-              </p>
+              <div class="title fw-medium display-md-2">Get In Touch</div>
+              <p class="sub-title text-main">Share a few details and we will follow up with next steps.</p>
               <div class="form-contact-wrap">
                 <form method="post" class="form-default" id="contactForm">
                   <div class="wrap">
@@ -579,7 +355,7 @@
                     <div class="cols">
                       <fieldset>
                         <label for="cf_phone">Your phone number</label>
-                        <input name="phone" id="cf_phone" class="radius-8" type="text" required>
+                        <input name="phone" id="cf_phone" class="radius-8" type="text">
                       </fieldset>
                       <fieldset>
                         <label for="cf_confirm_email">Your email (Confirm)*</label>
@@ -615,13 +391,13 @@
           <div class="footer-top-wrap">
             <div class="footer-logo">
               <a href="index.html">
-                <img src="./wolf_logo.png" class="logo" alt="logo">
+                <img src="./wolf_logo.png" class="logo" alt="P6K Solutions logo">
               </a>
             </div>
             <p class="text-dark">Copyright © 2025 by <span class="fw-medium">P6K, LLC.</span> All Rights Reserved.</p>
             <ul class="tf-social-icon style-large">
               <li>
-                <a href="https://linkedin.com/company/p6k-solutions/" class="social-item social-linkedin"><i
+                <a href="https://linkedin.com/company/p6k-solutions/" class="social-item social-linkedin" aria-label="P6K Solutions on LinkedIn" target="_blank" rel="noopener noreferrer"><i
                     class="icon icon-linkedin"></i></a>
               </li>
             </ul>
@@ -646,17 +422,7 @@
 
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.min.js"></script>
-      <script src="js/swiper-bundle.min.js"></script>
-      <script src="js/carousel.js"></script>
-      <script src="js/case-studies-data.js"></script>
-      <script src="js/testimonials-data.js"></script>
-      <script src="js/carousel-templates.js"></script>
-      <script src="js/bootstrap-select.min.js"></script>
       <script src="js/lazysize.min.js"></script>
-      <script src="js/count-down.js"></script>
-      <script src="js/wow.min.js"></script>
-      <script src="js/multiple-modal.js"></script>
-      <script src="js/infinityslide.js"></script>
       <script src="js/main.js"></script>
       <!-- EmailJS logic -->
       <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -711,6 +477,7 @@
           function setStatus(msg) { if (statusEl) statusEl.textContent = msg; }
         });
       </script>
+    </footer>
 </body>
 
 </html>
