@@ -333,12 +333,6 @@
               <div class="form-contact-wrap">
                 <form method="post" class="form-default" id="contactForm">
                   <div class="wrap">
-                    <div class="cols">
-                      <fieldset style="width:100%">
-                        <label for="cf_title">Title*</label>
-                        <input name="title" id="cf_title" class="radius-8" type="text" required>
-                      </fieldset>
-                    </div>
                     <input type="text" name="company" id="company" autocomplete="off" tabindex="-1"
                       style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
                     <input type="hidden" name="user_email" id="user_email">
@@ -353,10 +347,6 @@
                       </fieldset>
                     </div>
                     <div class="cols">
-                      <fieldset>
-                        <label for="cf_phone">Your phone number</label>
-                        <input name="phone" id="cf_phone" class="radius-8" type="text">
-                      </fieldset>
                       <fieldset>
                         <label for="cf_confirm_email">Your email (Confirm)*</label>
                         <input name="confirm_email" id="cf_confirm_email" class="radius-8" type="email" required>
@@ -443,17 +433,15 @@
           form.addEventListener('submit', async (e) => {
             e.preventDefault();
             if (!window.emailjs) { setStatus('Email service unavailable.'); return; }
-            const title = getVal('#cf_title');
             const name = getVal('#cf_name');
             const email = getVal('#cf_email');
             const confirm = getVal('#cf_confirm_email');
-            const phone = getVal('#cf_phone');
             const message = getVal('#cf_message');
-            if (!title || !name || !email || !confirm || !message) { setStatus('Please fill every required field.'); return; }
+            if (!name || !email || !confirm || !message) { setStatus('Please fill every required field.'); return; }
             if (email !== confirm) { setStatus('Emails must match.'); return; }
             if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { setStatus('Invalid email format.'); return; }
             setStatus('Sending...');
-            const paramsInternal = { title, name, email, user_email: email, phone, message };
+            const paramsInternal = { name, email, user_email: email, message };
             try {
               await emailjs.send(EMAILJS_SERVICE, EMAILJS_TEMPLATE_INTERNAL, paramsInternal);
             } catch (_) {
@@ -465,7 +453,6 @@
                 name,
                 user_email: email,
                 email,
-                title,
                 message,
                 message_excerpt: message.slice(0, 200)
               });
