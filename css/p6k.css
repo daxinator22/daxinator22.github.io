@@ -710,6 +710,11 @@ body.font-4 {
   width: 100%;
 }
 
+.p6k-macos-hero-art img {
+  display: block;
+  width: 100%;
+}
+
 .p6k-macos-details {
   background: #fff;
 }
