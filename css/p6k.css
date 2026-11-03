@@ -901,6 +901,18 @@ body.font-4 {
   margin: 16px 0 0;
 }
 
+.p6k-chives-store-badge {
+  align-self: center;
+  display: inline-block;
+  line-height: 0;
+}
+
+.p6k-chives-store-badge img {
+  display: block;
+  height: 80px;
+  width: auto;
+}
+
 .p6k-chives-hero-art img {
   border-radius: 30px;
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.36);
