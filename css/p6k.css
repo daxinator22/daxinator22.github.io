@@ -936,7 +936,42 @@ body.font-4 {
     linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
 }
 
+.p6k-chives-teaser {
+  background: var(--p6k-surface);
+}
+
+.p6k-chives-teaser-card {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--p6k-border);
+  border-radius: 30px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto 1fr auto;
+  padding: 36px;
+}
+
+.p6k-chives-teaser-card img {
+  border-radius: 24px;
+  height: 104px;
+  width: 104px;
+}
+
+.p6k-chives-teaser-card h2 {
+  margin-bottom: 12px;
+}
+
+.p6k-chives-teaser-card p:not(.p6k-eyebrow) {
+  margin-bottom: 0;
+}
+
 @media (max-width: 991px) {
+  .p6k-chives-teaser-card {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+
   .p6k-chives-screen-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
