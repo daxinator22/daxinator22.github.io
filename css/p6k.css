@@ -894,10 +894,11 @@ body.font-4 {
   font-weight: 800;
 }
 
-.p6k-chives-soon,
-.p6k-chives-soon:hover {
-  cursor: default;
-  transform: none;
+.p6k-chives-note {
+  color: #bbf7d0;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 16px 0 0;
 }
 
 .p6k-chives-hero-art img {
