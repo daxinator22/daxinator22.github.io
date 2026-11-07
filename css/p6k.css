@@ -862,3 +862,130 @@ body.font-4 {
     text-align: center;
   }
 }
+
+.p6k-chives-hero {
+  background:
+    radial-gradient(circle at 80% 18%, rgba(74, 222, 128, 0.24), transparent 34%),
+    radial-gradient(circle at 18% 82%, rgba(250, 204, 21, 0.16), transparent 30%),
+    linear-gradient(rgba(1, 57, 26, 0.95), rgba(1, 34, 16, 0.97)),
+    url("../background.png") center / cover;
+}
+
+.p6k-chives-hero .p6k-cred-strip span {
+  color: #dcfce7;
+}
+
+.p6k-chives-brand {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.p6k-chives-brand img {
+  border-radius: 18px;
+  height: 64px;
+  width: 64px;
+}
+
+.p6k-chives-brand span {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.p6k-chives-note {
+  color: #bbf7d0;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 16px 0 0;
+}
+
+.p6k-chives-store-badge {
+  align-self: center;
+  display: inline-block;
+  line-height: 0;
+}
+
+.p6k-chives-store-badge img {
+  display: block;
+  height: 80px;
+  width: auto;
+}
+
+.p6k-chives-hero-art img {
+  border-radius: 30px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.36);
+  display: block;
+  margin: 0 auto;
+  max-width: 360px;
+  width: 100%;
+}
+
+.p6k-chives-features {
+  background: #fff;
+}
+
+.p6k-chives-screens {
+  background: var(--p6k-surface);
+}
+
+.p6k-chives-screen-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.p6k-chives-screen-grid img {
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  display: block;
+  width: 100%;
+}
+
+.p6k-chives-cta-card {
+  background:
+    radial-gradient(circle at 82% 20%, rgba(74, 222, 128, 0.2), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+}
+
+.p6k-chives-teaser {
+  background: var(--p6k-surface);
+}
+
+.p6k-chives-teaser-card {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--p6k-border);
+  border-radius: 30px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto 1fr auto;
+  padding: 36px;
+}
+
+.p6k-chives-teaser-card img {
+  border-radius: 24px;
+  height: 104px;
+  width: 104px;
+}
+
+.p6k-chives-teaser-card h2 {
+  margin-bottom: 12px;
+}
+
+.p6k-chives-teaser-card p:not(.p6k-eyebrow) {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .p6k-chives-teaser-card {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+
+  .p6k-chives-screen-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
